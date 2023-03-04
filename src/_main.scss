@@ -1,0 +1,21 @@
+$screen-sm-max: 650px;
+$red: #f4006e;
+$blue: #01bfd7;
+$bg-color: #f1f1f1;
+$numbers-font-size: 24px;
+$app-footer-height: 80px;
+$app-bar-desktop-height: 69px;
+$app-bar-mobile-height: 60px;
+$mobile-category-height: 70px;
+$mobile-category-padding: 15px;
+$pay-background-color:  #f1f1f1;
+$text-color-gray: #6c6c6f;
+
+
+$finish-shopping-mobile-height:260px;
+
+@mixin sm {
+    @media (max-width: $screen-sm-max) {
+        @content;
+    }
+ }
