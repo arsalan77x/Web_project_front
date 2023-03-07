@@ -1,0 +1,12 @@
+@import "../../../../main";
+@include sm;
+.SlideShowContainer{
+   
+}
+.slideShowImage{
+    @include sm{
+        height: 300px;
+    }
+    width: 100%;
+    cursor: pointer;
+}

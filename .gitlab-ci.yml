@@ -1,0 +1,39 @@
+image: docker:19.03.12
+
+services:
+  - docker:19.03.12-dind
+  
+.ssh_preparation: &ssh_preparation
+  before_script:
+    - eval $(ssh-agent -s)
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > /etc/ssh/ssh_config'
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+
+stages:
+  - build
+  # - deploy
+
+before_script:
+  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD 
+build:
+  stage: build
+  only: 
+    - master
+  # when: manual
+  script:
+    - docker build --cache-from $CI_REGISTRY_IMAGE:front  --tag $CI_REGISTRY_IMAGE:front .
+    - docker push $CI_REGISTRY_IMAGE:front
+
+# deploy:
+#   stage: deploy
+#   only:
+#     - master
+#   <<: *ssh_preparation
+#   script:
+#     - ssh $DEPLOY_USER@$DEPLOY_HOST "sudo su;sudo docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD ;cd '$DEPLOY_PATH';sudo git pull;sudo docker-compose pull --quiet;sudo docker-compose up -d; docker image prune -fa; sleep 3;sudo docker-compose ps"
+
+  # when: manual
+  tags:
+    - deploy
+
+

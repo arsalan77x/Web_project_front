@@ -1,0 +1,30 @@
+@import "../../../../main";
+@include sm;
+
+.dailyOfferContainer{
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  background: linear-gradient(35deg, $red 20%,rgb(255, 166, 0) 50%, $blue 70%);
+  margin-bottom: 20px;
+}
+.dailyOffer{
+  flex-grow: 1;
+  display: inline-block;
+  padding-top: 16px;
+  margin-bottom: 10px;
+}
+.firstSliderItem{
+  @include sm{
+    font-size: 15px;
+    padding: 0px;
+  }
+  width: 150px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 10px;
+}

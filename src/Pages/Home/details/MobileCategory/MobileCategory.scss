@@ -1,0 +1,29 @@
+@import "../../../../main";
+
+.swiperContainer{
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: #{$app-bar-mobile-height};
+    z-index: 1;
+}
+.swiperMobile{
+    border-top: solid 2px $blue;
+    border-bottom: solid 2px $blue;
+    height: $mobile-category-height;
+    padding: $mobile-category-padding 0px;
+    width: 100%;
+}
+.mobileCategoryActive{
+    text-align: center;
+    color: $red;
+}
+.mobileCategory{
+    text-align: center;
+    color: black;
+}
+.mobileCategoryImage{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+}
