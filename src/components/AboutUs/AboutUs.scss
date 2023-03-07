@@ -1,0 +1,47 @@
+@import "../../main";
+@include sm;
+
+.aboutUsContainer{
+    width: 100%;
+    border-top: 3px #00bfd6 solid;
+    padding-bottom: 30px;
+    position: relative;
+    min-height: 200px;
+}
+.aboutUsTitle{
+    @include sm{
+        margin-right: auto;
+        margin-left: auto;
+        border-bottom: solid 8px #f4006e;
+        font-size: 30px;
+    }
+    color: #323233;
+    font-size: 36px;
+    margin-top: 50px;
+}
+.aboutUsDetails{
+    color: #6c6c6f;
+    font-size: 16px;
+    margin-bottom: 80px;
+    max-width: 500px;
+}
+.aboutUsImage{
+    @include sm {
+        display: none;
+    }
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.aboutUsDetailsContainer{
+    @include sm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+    }
+    margin-right: 100px;
+    float: right;
+}

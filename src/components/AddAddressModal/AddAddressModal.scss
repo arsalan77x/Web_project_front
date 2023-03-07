@@ -1,0 +1,36 @@
+@import "../../main";
+@include sm;
+
+.addAddressModalContainer{
+    text-align: center;
+}
+.addAddressInput{
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: 100%;
+    max-width: 250px;
+}
+.formDivider{
+    width: 100%;
+    height: 1.5px;
+    background: #d7d7d7;
+}
+.addAddressConfirmButton{
+    padding: 10px 70px;
+    background-color: #f4006e;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 20px;
+    display: inline-block;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.addAddressModalTop{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}

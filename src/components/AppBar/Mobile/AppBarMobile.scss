@@ -1,0 +1,38 @@
+@import "../../../main";
+
+.appBarMobileContainer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: $app-bar-mobile-height;
+}
+.loginButton{
+    margin-right: auto !important;
+    margin-left: 10px !important;
+}
+.menuIcon{
+    margin-right: 10px !important;
+}
+.drawerContainer{
+    width: 100%;
+}
+.drawerAppBar{
+    background-color: white;
+    border-bottom: #a4d029 solid 3px;
+    top: 0;
+    padding-bottom: 5px;
+    position: sticky;
+    z-index: 100;
+    margin-bottom: 1px;
+    width: 100%;
+    display: inline-block;
+}
+.drawerImage{
+    width: 100%;
+}
+.drawerIcons{
+    float: right;
+    margin: 10px 10px;
+    width: 30px;
+    height: 30px;
+}

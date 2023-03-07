@@ -1,0 +1,5 @@
+@import "../../main";
+
+.contentWrapper{
+    min-height: calc(100vh - #{$app-footer-height});
+}

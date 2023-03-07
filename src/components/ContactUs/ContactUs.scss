@@ -1,0 +1,67 @@
+@import "../../main";
+@include sm;
+
+.contactUsContainer{
+    @include sm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 70px;
+    }
+    border-top: 3px #00bfd6 solid;
+    padding-top: 50px;
+    display: inline-block;
+    width: 100%;
+}
+.contactUsDetailsContainer{
+    @include sm{
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+    }
+    margin-right: 100px;
+    float: right;
+}
+.contactUsTitle{
+    @include sm{
+        border-bottom: solid 8px #f4006e;
+        display: inline-block;
+    font-size: 30px;
+    }
+    color: #323233;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.contactUsListItmeContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+.contactUsListItemImage{
+    margin-left: 15px;
+}
+.locationImage{
+    @include sm{
+        margin: 0px auto;
+        width: 90%;
+        height: auto;
+        float: none;
+    }
+    float: left;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    width: 450px;
+    height: 300px;
+    margin-top: 50px;
+}
+.locationImageContainer{
+    @include sm{
+        display: inline-flex;
+    }
+}
+.contactUsListItemText{
+    font-size: 16px;
+    color: #6c6c6f;
+}

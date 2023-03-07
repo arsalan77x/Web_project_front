@@ -1,0 +1,37 @@
+@import "../../../main";
+@include sm;
+
+.basketListItemContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // border-bottom: solid #e1e1e2  1px;
+    background-color: white;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 2px #6c6c6f;
+}
+.basketProductDetail{
+    color: #6c6c6f;
+}
+.basketListItemDetailsContainer{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.basketDeletedPrice{
+    color: $red;
+    font-size: $numbers-font-size;
+    line-height: $numbers-font-size;
+}
+.basketPrice{
+    color: #6c6c6f;
+    font-size: $numbers-font-size;
+    line-height: $numbers-font-size;
+}
+.mobileBasketItemImage{
+    width: 100px;
+    border-radius: 4px;
+    margin-left: 10px;
+}

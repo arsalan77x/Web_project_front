@@ -1,0 +1,68 @@
+@import "../../../main";
+@include sm;
+
+.appBarDesktopContainer{
+    width: 100%;
+    height: $app-bar-desktop-height;
+    display: flex;
+    align-items: center;
+}
+.appBarLogo{
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.appBarButton{
+    text-align: center;
+    color: #000;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.appBarButton:hover{
+    background-color: #01bfd7;
+    color: white;
+}
+.appBarLogin{
+    background-color: #01bfd7;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: auto;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+.appBarProfileContainer{
+    @include sm{
+        margin-left: 10px;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: auto;
+    width: 120px;
+}
+.appBarProfileButton{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #01bfd7;
+    border-radius: 7px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.appBarUserImage{
+    width: 20px;
+    height: 20px;
+}
+.appBarDownImage{
+    width: 20px;
+    height: 20px;
+}

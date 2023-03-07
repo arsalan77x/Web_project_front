@@ -1,0 +1,75 @@
+@import "../../../../main";
+.productsCardContainer{
+    position: relative;
+    width: 240px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    float: right;
+    z-index: 0;
+    border-radius: 10px;
+    box-shadow: 10px 15px 38px 3px rgba(39,44,49,.1), 1px 3px 8px 3px rgba(39,44,49,.1) ;
+    transition: all 0.5s ease !important;
+}
+.productsCardContainer:hover {
+    box-shadow: 1px 3px 10px 2px rgba(39,44,49,.05), 0px 1px 4px rgba(39,44,49,.05) ;
+    // .desktopProductName{
+    //     animation: animation-name 2s infinite ease-in-out;
+    //     animation-direction: alternate;
+    //     text-overflow: clip;
+    //     overflow: visible;
+    // }
+
+}
+.discountCountainer{
+    width: 50px;
+    height: 62px;
+    position: absolute;
+    background-image: url(../discountBadge.png);
+    background-repeat: round;
+    text-align: center;
+    top: -5px;
+    left: 20px;
+}
+.discountTitle{
+    color: white;
+    font-size: 14px;
+}
+.desktopProductCardTypeContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    height: 55px;
+    background-color: $bg-color;
+    border-top: 2px solid rgba(58, 57, 57, 0.1);
+}
+.desktopProductName{
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 400;
+    text-overflow: ellipsis;
+}
+
+.desktopProductPlusContainer{
+    display: flex;
+    align-items: center;
+}
+.desktopProductDeletedPrice{
+    color: $red;
+    font-size: 20px;
+    line-height: $numbers-font-size;
+}
+.desktopColumn{
+    display: flex;
+    
+}
+
+@keyframes animation-name {
+    0% {
+      transform: translateX(0%)
+    }
+    100% {
+      transform: translateX(100%)
+    }
+  }

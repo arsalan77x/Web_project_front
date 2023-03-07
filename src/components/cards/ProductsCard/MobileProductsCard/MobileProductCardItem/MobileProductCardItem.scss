@@ -1,0 +1,33 @@
+@import "../../../../../main";
+$big-font-size: 18px;
+
+.mobileProductCardItemContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobileProductSize{
+    font-size: $big-font-size;
+    color: #8f8f8f;
+    margin-right: 5px; 
+    flex-grow: 1;
+    line-height: 90%;
+}
+.mobileProductPriceContainer{
+    text-align: center;
+}
+.mobileDeletedPrice{
+    font-size: $big-font-size;
+    line-height: $numbers-font-size;
+    color: $red;
+    line-height: 95%;
+    display: inline-block;
+}
+.mobilePrice{
+    font-size: $big-font-size;
+    line-height: $numbers-font-size;
+    color: #6c6c6f;
+    line-height: 95%;
+}

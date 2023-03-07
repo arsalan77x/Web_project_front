@@ -1,0 +1,32 @@
+.userProfileImage{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.menuListItemContainer{
+    display: flex;
+    text-align: right;
+}
+.userNameTitle{
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: lighter;
+}
+.seeProfileText{
+    font-size: 12px;
+    color: #01bfd7;
+}
+.listItemIcon{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+.listItemText{
+    font-size: 14px;
+    font-weight: lighter;
+}
+.menuListItem{
+    display: flex;
+    text-align: right;
+    padding: 10px 0px;
+}

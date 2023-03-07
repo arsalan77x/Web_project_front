@@ -1,0 +1,33 @@
+.desktopBasketItemContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid #e1e1e2  1px;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    transition-duration: 500ms;
+    &:hover{
+        padding-right: 20px;
+    }
+}
+.desktopBasketVerticalColumn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.desktopBasketItemTitle{
+    display: inline-block;
+    align-self: flex-start;
+    color: #6c6c6f;
+    font-weight: 100;
+}
+
+@keyframes slide{
+    0%{
+        padding-right: 10px;
+    }
+    100%{
+        padding-right: 20px;
+    }
+}
