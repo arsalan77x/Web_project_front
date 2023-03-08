@@ -78,6 +78,7 @@ export const buy = (
           setError({ open: true, message: label, state: "warning" })
         );
       } else {
+
         finalShopping(deliveryType, payType, history);
       }
     else {

@@ -30,7 +30,6 @@ const useStyles = makeStyles({
 
 const DesktopProductsCard = props => {
     const classes = useStyles()
-    const [tasteModal, setTasteModal] = useState(false)
     const [typeModal, setTypeModal] = useState(false)
     const history = useHistory()
 
@@ -68,7 +67,11 @@ const DesktopProductsCard = props => {
                         : null)}
                     <div className="desktopProductCardTypeContainer">
                         <div className="desktopProductPlusContainer">
+                        {
+                            console.log(props.product)
+                        }
                             {!(props.product.off_percent && props.product.off_percent !== 0) ?
+                                
                                 <Typography variant="h5" color="textSecondary">
                                     {props.product.types[0].price}تومان
                                 </Typography>

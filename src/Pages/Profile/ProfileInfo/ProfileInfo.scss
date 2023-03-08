@@ -1,0 +1,34 @@
+@import "../../../main";
+@include sm;
+
+.profileInfoContainer{
+    display: flex;
+    flex-direction: column;
+}
+.profileInfoField{
+   display: flex;
+   align-items: center;
+   width: 100%;
+}
+.profileInfoRadio{
+    float: right;
+    margin-right: 50px;
+}
+.radioLabel{
+    margin-right: 80px;
+    /* width: 50%; */
+    /* float: right; */
+    /* margin-right: 50px; */
+    /* margin-bottom: 50px; */
+}
+.profileInfoChangeButton{
+    padding: 10px 30px;
+    background-color: $red;
+    color: white;
+    font-size: 20px;
+    margin: 10px auto;
+    border-radius: 4px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    cursor: pointer;
+}

@@ -3,7 +3,6 @@ import "./SignUpForm.css";
 import { Button, makeStyles, TextField, Typography } from "@material-ui/core";
 import dataProvider from "../../../../../Data/dataProvider";
 import { useDispatch, useSelector } from "react-redux";
-import { unstable_ImmediatePriority } from "scheduler";
 import { setError } from "../../../../../redux/error_slice";
 import { setUser } from "../../../../../redux/user_slice";
 const useStyles = makeStyles({
@@ -44,7 +43,7 @@ const SignUpForm = (props) => {
         password === ""
           ? "لطفا رمز عبور خود را وارد کنید"
           : password.length < 4
-          ? "رمز عبور نمیتواند کمتر از 4 کاراکتر داشته باشد"
+          ? "رمز عبور نمی‌تواند کمتر از 4 کاراکتر داشته باشد"
           : "",
     });
     if (
@@ -66,8 +65,8 @@ const SignUpForm = (props) => {
       
       if (data) {
         props.setOpen(false);
-        dispatch(setUser({ id: data._id, name: data.name, login: true }));
-        const label = user.name + " " + "به بستنی طرشت خوش آمدید !";
+        dispatch(setUser({ id: data._id, name: data.name, login: false }));
+        const label = user.name + " " + "حساب کاربری شما با موفقیت ایجاد شد.";
         dispatch(
           setError({
             open: true,
@@ -77,6 +76,7 @@ const SignUpForm = (props) => {
           })
         );
       }
+      props.setOpen(true)
       dispatch(setError({ loading: false }));
     }
   }

@@ -1,0 +1,62 @@
+@import "../../../main";
+@include sm;
+$titles-font: 16px;
+$small-titles-font: 14px;
+
+.buyHistoryCard{
+    @include sm{
+        margin: 5px 0px;
+    }
+    width: 99%;
+    margin: 10px;
+    border-radius: 4px;
+    border: rgba(1, 1, 1, 0.2) solid 2px;
+    background-color: white;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.buyHistoryDetailsContainer{
+    @include sm{
+        font-size: $small-titles-font;
+    }
+    font-size: $titles-font;
+    display: flex;
+    align-items: center;
+}
+.buyHistoryTime{
+    margin-left: 10px;
+}
+.buyHistoryDate{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.buyHistoryId{
+    margin-right: 10px;
+}
+.buyHistoryDeliverType{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.buyHistoryMoreDetails{
+    @include sm{
+        font-size: 12px;
+    }
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-right: auto;
+    color: $red;
+}
+.buyHistoryMoreDetailsText{
+    @include sm{
+        max-width: 30px;
+
+    }
+}
+.buyHistoryTotalPrice{
+    @include sm{
+        font-size: 20px;
+    }
+    font-size: 26px;
+}

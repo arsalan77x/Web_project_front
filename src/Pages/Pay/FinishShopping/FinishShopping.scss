@@ -1,0 +1,207 @@
+@import "../../../main";
+@include sm;
+$little-font-size: 18px;
+$field-padding: 10px 10px;
+$big-font-size: 20px;
+$desktop-padding: 5px 5px;
+
+.finishShoppingContainer {
+    @include sm{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    width: 320px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 60px;
+    padding: 0px 10px;
+    margin-right: 20px;
+}
+.priceDetailsContainer{
+    @include sm{
+        background-color: #fafaf5;
+        margin: 10px;
+        height: $finish-shopping-mobile-height;
+    }
+    background-color: white;
+    box-shadow: 10px 15px 38px 3px rgba(39,44,49,.2) ;
+    display: flex;
+    flex-direction: column;
+    color: rgba($color: #000000, $alpha: 0.5) !important;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+.productsPriceContainer{
+    @include sm{
+        padding: $field-padding;
+        
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $desktop-padding;
+}
+
+.priceTitle{
+    @include sm{
+        font-size: $little-font-size;
+    }
+    font-size: $big-font-size;
+}
+
+.priceText{
+    @include sm{
+        font-size: $little-font-size;
+    }
+    font-size: $big-font-size;
+}
+.discountContainer{
+    @include sm{
+        padding: $field-padding;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $desktop-padding;
+}
+.payDiscountTitle{
+    @include sm{
+        font-size: $little-font-size;
+    }
+    font-size: $big-font-size;
+}
+.discount{
+    @include sm{
+        font-size: $little-font-size;
+    }
+    font-size: $big-font-size;
+    color: #f4006e;
+}
+.totalContainer{
+    @include sm{
+        padding: $field-padding;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $desktop-padding;
+}
+.payTotalPriceTitle{
+    @include sm{
+        font-size: $little-font-size;
+    }
+    font-size: $big-font-size;
+}
+.payTotalPrice{
+    @include sm{
+        font-size: $little-font-size;
+    }
+    font-size: $big-font-size;
+}
+.sendPriceContainer{
+    @include sm{
+        padding: $field-padding;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+}
+.sendPriceTitle{
+    @include sm{
+        font-size: $little-font-size;
+    }
+    font-size: $big-font-size;
+}
+.sendPrice{
+    @include sm{
+        font-size: $little-font-size;
+    }
+    font-size: $big-font-size;
+}
+.payBuyablePriceContainer{
+    @include sm{
+        float: left;
+        margin-left: 10px;
+    }
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.payBuyablePriceTitle{
+    @include sm{
+        margin: 0px;
+        font-size: $little-font-size;
+    }
+    font-size: 26px;
+    // line-height: 26px;
+}
+.payBuyablePrice{
+    @include sm{
+        margin: 0px;
+        font-size: $little-font-size;
+    }
+    font-size: 26px;
+    // line-height: 26px;
+}
+.payButton{
+    @include sm{
+        display: none;
+    }
+    color: white;
+    border-radius: 10px;
+    font-size: 26px;
+    padding: 5px 0px;
+    width: 90%;
+    background-color: $red;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    align-self: center;
+    margin: 10px;
+}
+.payButtonMobile{
+    @include sm{
+        display: inline-block;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    display: none;
+    float: right;
+    // background-color: #b8ffaf;
+    background-color: #01bfd7;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.mobileButtonContainer{
+    @include sm{
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.zarrinpalContainer{
+    @include sm{
+        display: none;
+    }
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-evenly;
+}
+.verticalColumn{
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    align-items: center;
+}

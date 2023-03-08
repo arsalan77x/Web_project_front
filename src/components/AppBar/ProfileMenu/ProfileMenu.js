@@ -13,9 +13,10 @@ import exitIcon from "./exit.png"
 import { exitAccount } from '../ProfileMenuApi';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 
 const ProfileMenu = props => {
-
+    const history = useHistory()
     const user = useSelector(state => state.user)
     const handleClose = (event) => {
         if (props.anchorRef.current && props.anchorRef.current.contains(event.target)) {
@@ -72,7 +73,7 @@ const ProfileMenu = props => {
                                         </div>
                                     </MenuItem>
                                 </Link>
-                                <MenuItem onClick={() => { exitAccount(); props.setOpen(false) }}>
+                                <MenuItem onClick={() => { exitAccount(); props.setOpen(false); history.push("/")}}>
                                     <div className="menuListItem">
                                         <img src={exitIcon} className="listItemIcon" />
                                         <p className="listItemText">خروج از حساب کاربری</p>

@@ -1,12 +1,13 @@
 @import "../../../../main";
 @include sm;
 .SlideShowContainer{
-   
+
 }
 .slideShowImage{
     @include sm{
-        height: 300px;
+        height: 100px;
     }
+    height: 300px;
     width: 100%;
     cursor: pointer;
 }

@@ -1,8 +1,6 @@
 import React from "react"
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
-import ListAltIcon from '@material-ui/icons/ListAlt';
-import CommentIcon from '@material-ui/icons/Comment';
-import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
+
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 import AppBarLogo from "../Desktop/logo.png"
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
@@ -49,7 +47,7 @@ export const getDrawerItems = () => {
             {
                 icon: <ExitToAppIcon color="secondary" fontSize="large" className="drawerIcons"/>,
                 text: "خروج از حساب کاربری",
-                link: "https://www.bastanitarasht.ir",
+                link: "/",
                 content:"exit",
                 show:store.getState().user.login
             }            

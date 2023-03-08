@@ -23,9 +23,10 @@ const DailyOffer = () => {
 
   const getDailyOffer = async () => {
     setLoading(true)
-    let data = await dataProvider.getList('product/list/menu?filter={"daily_offer":"true"}')
+    let data = await dataProvider.getList('product/list/menu?filter={"daily_offer":true}')
+    console.log(data)
     if (data)
-      setDailyProducts(data)
+      setDailyProducts(data[0].products)
     setLoading(false)
   }
 
@@ -45,13 +46,13 @@ const DailyOffer = () => {
     <div className="dailyOfferContainer">
 
       <div className="firstSliderItem">
-        <Typography variant="h5" >پیشنهاد روزانه</Typography>
+        <Typography variant="h6" >پیشنهاد روزانه</Typography>
         <img src={logo} width="80px" height="80px" />
       </div>
 
 
       <Swiper
-        slidesPerView={!matches ? 5 : "auto"}
+        slidesPerView={!matches ? 5 : 1}
         navigation
         freeMode
         className="dailyOffer">

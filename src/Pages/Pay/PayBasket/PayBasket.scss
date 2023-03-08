@@ -1,0 +1,29 @@
+@import "../../../main";
+
+.payBasketContainer{
+    height: 500px;
+    width: 40%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.payBasketItemsContainer{
+    overflow-y: scroll;
+    max-height: 400px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.payBasketItemsContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.payBasketTitleContainer{
+    display: inline-flex;
+    align-items: center;
+    border-bottom: solid 4px $red ;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+}
+.payBasketTitle{
+    font-size: 26px;
+    display: inline-block;
+}

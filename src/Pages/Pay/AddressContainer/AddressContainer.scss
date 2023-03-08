@@ -1,0 +1,53 @@
+@import "../../../main";
+
+.addressContainerContainer {
+    width: 40%;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+.addressContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.payTitle {
+    font-size: 26px;
+    margin-top: 10px;
+    border-bottom: solid 4px $red ;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.addressCardContainer {
+    width: 100%;
+    max-height: 250px;
+    overflow: auto;
+    padding-top: 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.addressCardContainer::-webkit-scrollbar {
+    display: none;
+}
+.payAddAddressContainer {
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+    border: dashed 4px rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 38px rgba(39,44,49,.1) ;
+    cursor: pointer;
+}
+.addAddressImage {
+    width: 50px;
+    height: 70px;
+}
+.addAddressTitle {
+    color: #999999;
+    font-size: 16px;
+}

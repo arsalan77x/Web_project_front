@@ -15,11 +15,15 @@ const ProductsList = props => {
         // getProducts(prodcutCotntext, props.setLoading)
     }, [])
     const productsListItem = prodcutCotntext.products.map((item, index) =>
+        
         item.products.length != 0 &&
         <div id={"category_" + index} key={item.category._id}>
             <p className="categoryTitle">{item.category.name}</p>
             <br />
             <br />
+            {
+                console.log(item.products)
+            }
             {!matches ?
                 <Masonry columnsCount={3}>
                     {item.products.map((item2, index) =>

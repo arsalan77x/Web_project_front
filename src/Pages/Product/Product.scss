@@ -1,0 +1,156 @@
+@import "../../main";
+@include sm;
+$big-font-size: 20px;
+
+.productPageHeader{
+    @include sm{
+        flex-direction: column;
+    }
+    width: 100%;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    margin-top: 10px;
+}
+.productPageImageContainer{
+    @include sm{
+        width: 95%;
+        margin: 0px auto;
+    }
+    width: 380px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: solid 1px rgba($color: #000000, $alpha: 0.2);
+    margin: 0px 20px;
+    box-shadow: 8px 14px 38px rgba(39,44,49,.1), 1px 3px 8px rgba(39,44,49,.08);
+}
+.productPageDiscountCountainer{
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    background-image: url(./discountBadge.png);
+    background-repeat: round;
+    text-align: center;
+    top: -5px;
+    left: 20px;
+}
+.productPageDiscountTitle{
+    color: white;
+    font-size: 20px; 
+}
+.productPageHeaderDetails{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.productPageName{
+    font-size: 36px;
+}
+.productPageCategory{
+    font-size: 20px;
+}
+.productPageDeletedPrice{
+    font-size: $big-font-size;
+    line-height: $numbers-font-size;
+    color: #8f8f8f ;
+    text-decoration: line-through;
+}
+.productPagePrice{
+    font-size: $big-font-size;
+    line-height: $numbers-font-size;
+    color: $red;
+}
+.productPageTypeItem{
+    @include sm{
+        width: 100%;
+    }
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 1px rgba($color: #000000, $alpha: 0.1);
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    position: relative;
+    box-shadow: 8px 14px 38px rgba(39,44,49,.05), 1px 3px 8px rgba(39,44,49,.08);
+    transition: all 0.2s ease-in-out;
+}
+.productPageTypeItem:hover{
+    @include sm{
+        box-shadow: 8px 14px 38px rgba(39,44,49,.05), 1px 3px 8px rgba(39,44,49,.08);
+    }
+    box-shadow: 8px 14px 38px rgba(39,44,49,.01), 1px 3px 8px rgba(39,44,49,.01);
+}
+.productPageSize{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.productPageTypeItemPriceContainer{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.productPageItemsContainer{
+    @include sm{
+        width: 100%;
+        padding: 0px 10px;
+        box-sizing: border-box;
+    }
+    display: flex;
+    flex-direction: column;
+}
+.productPageNameContainer{
+    display: inline-flex;
+    align-items: center;
+
+}
+.productPageBodyContainer{
+    @include sm{
+        flex-direction: column;
+    }
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+}
+.productPageProductDetails{
+    display: flex;
+    flex-direction: column;
+}
+.productPageProductsDetailsTitle{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.productPageProductDetailsField{
+    font-size: $big-font-size;
+    color: rgba($color: #000000, $alpha: 0.5);
+    margin-bottom: 10px;
+}
+.productPageSimilarProductsTitle{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: rgba($color: #000000, $alpha: 0.8);
+}
+.productPageSwiper{
+    padding: 10px;
+}
+.productPageCaption{
+    @include sm{
+        margin: 0px;
+        width: 100%;
+        position: static;
+    }
+    font-size: 20px;
+    color: rgba($color: #000000, $alpha: 0.5);
+    text-align: justify;
+    position: absolute;
+    right: 50%;
+    width: 400px;
+}

@@ -8,7 +8,6 @@ import BaseModal from "../../../../modal/base_modal";
 
 
 const MobileProductCardItem = props => {
-    const [tasteModal, setTasteModal] = useState(false)
     const listItems = props.product.types.map(item =>
 
         <div className="mobileProductCardItemContainer" key={item._id}>
@@ -21,19 +20,8 @@ const MobileProductCardItem = props => {
                 <p className="mobilePrice"> {item.price.toLocaleString()}</p>
             </div>
 
-            {props.product.tastes && props.product.tastes.length !== 0 ?
-                <>
-                    {/* <BaseModal open={tasteModal} setOpen={setTasteModal}>
-                        <ProductTastesModal open={tasteModal} setOpen={setTasteModal} product={props.product} />
-                    </BaseModal>
-                    <IconButton
-                        onClick={(e) => {
-                            setTasteModal(true)
-                        }}
-                    >
-                        <AddIcon color="secondary" />
-                    </IconButton> */}
-                </>
+            {false ?
+               null
                 :
                 <ProductCounter
                     product={props.product}

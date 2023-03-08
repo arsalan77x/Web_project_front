@@ -1,0 +1,63 @@
+@import "../../../main";
+
+.profileTitleContainer{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+.profileTitle{
+    font-size: 26px;
+    margin-right: 40px;
+    display: inline-block;
+    border-bottom: $red solid 8px;
+}
+.profileDetailsContainer{
+    width: 65%;
+    margin-right: 30px;
+    margin-top: 20px;
+    padding: 0px 10px;
+}
+.profileDetailsContainer::-webkit-scrollbar-thumb {
+    background: $red; 
+    border-radius: 10px;
+    transition-duration: 500ms;
+  }
+.profileDetailsContainer::-webkit-scrollbar-thumb:active {
+    background-color: $blue; 
+    border-radius: 10px;
+  }
+  .profileDetailsContainer::-webkit-scrollbar {
+    width: 10px;
+    
+  }
+.profileListCard{
+    position: sticky;
+    top: 100;
+    right: 40;
+    width: 300px;
+    margin-bottom: 5px;
+    padding-top: 20px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.profileListTitle{
+    font-size: 16px;
+}
+.customerInfoContainer{
+    float: right;
+}
+.profileName{
+    font-size: 20px;
+}
+.profileNumber{
+    font-size: 15px;
+}
+.desktopProfileLink{
+    color: black;
+}
+.desktopProfileLink :active{
+    color: $blue;
+}
+.desktopProfileLink :hover{
+    color: $blue;
+}

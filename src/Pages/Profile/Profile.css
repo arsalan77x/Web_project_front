@@ -1,0 +1,32 @@
+.profileTitleContainer{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+.profileTitle{
+    font-size: 18px;
+    margin-right: 40px;
+}
+.botomBorder{
+    width: 150px;
+    height: 10px;
+    margin-right: 20px;
+    background: rgb(247, 0, 112) none repeat scroll 0% 0%;
+}
+.profileDetails{
+    float: right;
+    width: 75%;
+    /* margin-left: 20px; */
+    height: 500px;
+    margin-right: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.profileDetails::-webkit-scrollbar {
+    display: none;
+}
+.profileListTitle{
+    font-size: 16px;
+}
